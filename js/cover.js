@@ -1,9 +1,9 @@
 const coverElement = document.getElementById('cover-img');
 const covers = [
-	'/covers/1.webp',
-	'/covers/2.webp',
-	'/covers/3.jpg',
-	'/covers/4.jpg'
+	'./covers/1.webp',
+	'./covers/2.webp',
+	'./covers/3.jpg',
+	'./covers/4.jpg'
 ];
 
 function loadCover() {
