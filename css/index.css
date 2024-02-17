@@ -1,0 +1,135 @@
+@font-face {
+	font-family: 'JetBrainsMono';
+	src: local('JetBrains Mono Regular'), 
+		 url('/res/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+body {
+	font-family: 'JetBrainsMono';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 50px;
+	background-color: var(--background-color);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: auto;
+}
+
+#img {
+	margin-right: 50px;
+}
+
+#cover-img {
+	height: 550px;
+	aspect-ratio: 9 / 16;
+	object-fit: cover;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: transform 100ms ease-in-out;
+}
+
+#img #theme-buttons {
+	margin-top: 5px;
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+
+#img button {
+	border: none;
+	outline: none;
+	background: var(--accent-color);
+	aspect-ratio: 1 / 1;
+	height: 20px;
+	border-radius: 3px;
+}
+
+#cover-img:hover {
+	transform: scale(1.02);
+}
+
+.greeting-heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	color: var(--accent-color-2);
+}
+
+.cursor {
+	display: inline;
+	height: 50px;
+	width: 20px;
+	margin-left: 5px;
+	background-color: var(--accent-color-2);
+	animation: blink 1.5s steps(2) infinite;
+}
+
+#date {
+	text-align: center;
+	color: var(--accent-color);  
+	font-size: 20px;
+}
+
+.bookmarks {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+	margin-top: 30px;
+}
+
+.bookmarks-heading {
+	color: var(--accent-color);  
+	font-size: 30px;
+}
+
+.bookmarks ul {
+	margin-left: 39px;
+}
+
+.bookmarks ul li:first-of-type {
+	margin-top: 20px;
+}
+
+.bookmarks ul li {
+	font-size: 20px;
+	margin-top: 5px;
+
+}
+
+.bookmarks ul li a {
+	display: block;
+	transition: all 50ms ease-in-out;
+	color: var(--text-color);
+  
+}
+
+.bookmarks ul li a:hover {
+	font-weight: bold;
+}
