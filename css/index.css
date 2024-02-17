@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'JetBrainsMono';
 	src: local('JetBrains Mono Regular'), 
-		 url('/res/JetBrainsMono-Regular.ttf') format('truetype');
+		 url('../res/JetBrainsMono-Regular.ttf') format('truetype');
 }
 
 @keyframes blink {
